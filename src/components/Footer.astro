@@ -1,0 +1,19 @@
+---
+import Social from "./Social.astro";
+
+const platform = "github";
+const username = "james-collapse";
+---
+
+<footer>
+  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <Social platform="instagram" username="londonpatternclub"/>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
